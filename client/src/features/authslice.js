@@ -12,7 +12,7 @@ const authslice = createSlice({
     reducers:{
         userLoggedIn: (state,action)=>{
             state.user = action.payload.user
-            state.isAuthonticated = ture
+            state.isAuthonticated = true
         },
         userLoggedOut: (state)=>{
             state.user = null,
