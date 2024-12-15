@@ -11,10 +11,10 @@ connectDB();
 const app = e();
 const PORT = process.env.PORT || 8080
 // default middle ware
-app.use(express.json());
+app.use(e.json());
 app.use(cookieParser());
 app.use(cors({
-    origin:"http://localhost:3030",
+    origin:"http://localhost:5173",
     credentials:true
 }));
 
