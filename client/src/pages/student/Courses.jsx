@@ -1,8 +1,11 @@
 import { Skeleton } from "@/components/ui/skeleton";
+import Course from "./Course";
+
+const courses = [1,2,3,4,5,6];
 
 
 const Courses = () => {
-    const isLoading = true;
+    const isLoading = false;
 
     return (
         <div className="bg-gray-50 dark:bg-[#141414]">
@@ -10,7 +13,11 @@ const Courses = () => {
                 <h2 className="mb-10 text-3xl font-bold text-center">Our Courses</h2>
                 <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
                     {
-                        isLoading ? <CourseSkeleton /> : " "
+                        isLoading ? Array.from({ length: 8 }).map((_, index) => (
+                            <CourseSkeleton key={index} />
+                        )) : courses.map((course,key)=>(
+                            <Course  key={key}/>
+                        ))
                     }
                 </div>
             </div>

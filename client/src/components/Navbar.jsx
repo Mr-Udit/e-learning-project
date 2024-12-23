@@ -25,6 +25,7 @@ import {
   AvatarImage,
 } from "@/components/ui/avatar"
 import Darkmode from "./Darkmode";
+import { Link } from "react-router-dom";
 // import { Link, } from "react-router-dom";
 
 const Navbar = () => {
@@ -53,10 +54,10 @@ const Navbar = () => {
                   <DropdownMenuSeparator />
                   <DropdownMenuGroup>
                     <DropdownMenuItem>
-                      My Learning
+                      <Link to="my-learning"> My Learning</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem>
-                      Edit Profile
+                      <Link to="profile"> Edit Profile </Link>
                     </DropdownMenuItem>
                   </DropdownMenuGroup>
                   <DropdownMenuSeparator />

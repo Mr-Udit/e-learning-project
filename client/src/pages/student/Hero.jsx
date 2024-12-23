@@ -22,7 +22,7 @@ const Hero = () => {
           />
           <Button type="submit" className="px-6 py-3 text-white bg-blue-600 rounded-r-full dark:bg-blue-700 hover:bg-blue-700 dark:hover:bg-blue-800">Search</Button>
         </form>
-       <Button className="text-blue-600 bg-white rounded-full dark:bg-gray-800 hover:bg-gray-200">Explore Courses</Button>
+        <Button className="text-blue-600 bg-white rounded-full dark:bg-gray-800 hover:bg-gray-200">Explore Courses</Button>
       </div>
 
     </div>
